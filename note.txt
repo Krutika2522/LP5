@@ -1,0 +1,33 @@
+#g++ in ubuntu
+sudo apt update
+sudo apt install g++
+sudo apt install build-essential
+sudo apt install libomp-dev
+
+create file nano hello.cpp
+
+g++ -fopenmp filename.cpp -o filename
+./filename
+
+g++ -fopen filename.cpp -o executable
+./executable
+
+----------------------------------------------
+
+
+cuda installation
+
+
+1.option1 wget https://developer.download.nvidia.com/compute/cuda/12.4.1/local_installers/cuda_12.4.1_550.54.15_linux.run
+
+2. sudo apt install nvidia-cuda-toolkit
+3. nvcc --version
+4. write your program.cu
+4. nvcc -o a.out vectorAdd.cu 
+
+nvcc hello_world.cu -o hello_world
+./hello_world
+
+nvcc -o fn fn.cu
+./fn
+
